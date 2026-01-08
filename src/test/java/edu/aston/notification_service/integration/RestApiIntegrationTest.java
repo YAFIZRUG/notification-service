@@ -25,6 +25,7 @@ import static org.junit.jupiter.api.Assertions.*;
     "spring.mail.password=test",
     "spring.mail.properties.mail.smtp.auth=false"
 })
+
 @EmbeddedKafka(partitions = 1, topics = {"user.events"})
 class KafkaEmailIntegrationTest {
     
